@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/places.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js/scripts.js" </script>
+    <title>Places visited</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Note your trips</h2>
+
+          <form id="new-trip">
+            <div class="form-group">
+              <label for="location">City</label>
+              <input type="text" id="new-location">
+            </div>
+            <div class="form-group">
+              <label for="landmark">Landmark</label>
+              <input type="text" id="new-landmark">
+            </div>
+            <div class="form-group">
+              <label for="time">Season/Year</label>
+              <input type="text" id="time">
+            </div>
+            <div class="form-group">
+              <label for="favorites">Of note</label>
+              <input type="text" id="notes">
+            </div>
+
+            <button type="submit" class="btn">See Trips</button>
+          </form>
+
+          <h2>Trips:</h2>
+          <ul id="trips">
+
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <div id="show-trips">
+            <h2></h2>
+
+            <p>City:<span class='city'></span></p>
+            <p>Site:<span class='site'></span></p>
+            <p>Year:<span class='year'></span></p>
+            <p>Favorites:<span class='favorites'></span></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
