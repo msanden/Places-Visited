@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/places.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-    <script src="js/scripts.js" </script>
+      crossorigin="anonymous" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
     <title>Places visited</title>
   </head>
   <body>
@@ -19,43 +18,40 @@
           <form id="new-trip">
             <div class="form-group">
               <label for="location">City</label>
-              <input type="text" id="new-location">
+              <input type="text" class="form-control" id="new-location">
             </div>
             <div class="form-group">
               <label for="landmark">Landmark</label>
-              <input type="text" id="new-landmark">
+              <input type="text" class="form-control" id="new-landmark">
             </div>
             <div class="form-group">
               <label for="time">Season/Year</label>
-              <input type="text" id="time">
+              <input type="text" class="form-control" id="time">
             </div>
             <div class="form-group">
-              <label for="favorites">Of note</label>
-              <input type="text" id="notes">
+              <label for="favorites">Favorites</label>
+              <input type="text" class="form-control" id="notes">
             </div>
-
-            <button type="submit" class="btn">See Trips</button>
+            <button type="submit" class="btn">Add Trip</button>
           </form>
 
-          <h2>Trips:</h2>
+          <h2>Your trips:</h2>
           <ul id="trips">
 
           </ul>
-        </div>
+        </div> <!-- end of column 1 -->
 
         <div class="col-md-6">
           <div id="show-trips">
             <h2></h2>
-
             <p>City:<span class='city'></span></p>
-            <p>Site:<span class='site'></span></p>
-            <p>Year:<span class='year'></span></p>
+            <p>Landmark:<span class='site'></span></p>
+            <p>Season/Year:<span class='year'></span></p>
             <p>Favorites:<span class='favorites'></span></p>
           </div>
-        </div>
 
-      </div>
-
-    </div>
+        </div> <!-- end of column 1 -->
+      </div> <!-- end of row-->
+    </div> <!-- end of container-->
   </body>
 </html>
