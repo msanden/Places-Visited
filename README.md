@@ -18,7 +18,7 @@
 jQuery, JavaScript
 
 ## Support and Contact details
-The application has no known bugs. However, contribute or report any issue you encounter [here](https://github.com/msanden/Triangle-Tracker/issues/new).
+The application has no known bugs. However, contribute or report any issue you encounter [here](https://github.com/msanden/Places-Visited/issues/new).
 
 ### License
 MIT License
