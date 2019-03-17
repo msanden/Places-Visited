@@ -10,8 +10,8 @@
  | The program:                                            |  Example Input           | Example Output          |
  |:-------------------------------------------------------:|-------------------------:|------------------------:|      
  | Uses a form to take entries about your visit            | Landmark: Fort Jesus     |                         |
- | Lists the cities/destinations you visited               |                          |  Mombasa                |
- | Displays details about your trip                        |                          | The beach was fantastic!|
+ | Lists the cities/destinations you visited               |                          | Your Trips: Mombasa     |
+ | Displays details about your trip                        |                          | Favorites: The beach was fantastic!|
 
 
 ## Tools and Technologies Used
