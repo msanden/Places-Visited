@@ -6,6 +6,13 @@ function Trip(city,landmark,time,notes) {
   this.notes = notes;
 }
 
+function resetFields(){
+  $("input#new-location").val("");
+  $("input#new-landmark").val("");
+  $("input#time").val("");
+  $("input#notes").val("");
+}
+
 //user-interface
 $(document).ready(function() {
   $('form#new-trip').submit(function(event){
@@ -16,11 +23,7 @@ $(document).ready(function() {
     var inputTime = $('input#time').val();
     var inputNotes = $('input#notes').val();
 
-
-    //new instance
-
     var newTrip = new Trip(inputPlace,inputSite,inputTime,inputNotes);
-
 
     $('ul#trips').append("<li><span class='tripList'>" + newTrip.city + "</span></li>");
 
@@ -32,12 +35,6 @@ $(document).ready(function() {
       $('.year').text(newTrip.time);
       $('.favorites').text(newTrip.notes);
     });
-
-//    $("input#new-location").val("");
-//    $("input#new-landmark").val("");
-//    $("input#time").val("");
-//    $("input#notes").val("");
-
+    resetFields();
   });
-
 });
